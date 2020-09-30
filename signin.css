@@ -1,0 +1,95 @@
+/*Universal selector to remove all defined margins and paddings*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+/*body font and background*/
+body{
+    background:#ddd;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*basic form layout*/
+.form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    background:#f5f5f5;
+    box-shadow:5px 5px 10px 5px #ccc;
+}
+
+/*defining header*/
+.form .tab-header{
+    height:50px;
+    line-height:50px;
+}
+
+
+.form .tab-header >div{
+    width:50%;
+    float:left;
+    text-align:center;
+    background:#ddd;
+    color:#555;
+    cursor:pointer;
+}
+.form .tab-header > div.active {
+        background:#f5f5f5;
+        color:#111;
+}
+
+.form .tab-content{
+    padding:20px;
+}
+
+.form .tab-content .form-element{
+    margin:10px 0;
+}
+
+.form .tab-content .form-element input{
+    width:100%;
+    padding :10px;
+    border:1px solid #aaa;
+    font-size:16px;
+    background:#f5f5f5;
+    border-radius:5px;
+    outline:none;
+}
+
+.form .tab-content .form-element input[type="checkbox"]{
+    width:20px;
+    margin:10px 0;
+    margin-left:-5px;
+}
+.form .tab-content .form-element label{
+    color:#111;
+
+}
+
+.form .tab-content .form-element button{
+    margin-top:5px;
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#000000;
+    color:#f5f5f5;
+    font-size:15px;
+    font-weight:600;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+
+.form .tab-content > div.active{
+    display:block;
+}
+
+.form .tab-content > div {
+    display: none;
+}

@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/*Style the header with back-ground grey*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    overflow: hidden;
+    background-color: black;
+    position:fixed;
+    top:0;
+    width:100%;
+    color: white;
+    font-weight: 400;
+    z-index:1;
+}
+
+/*Styling header links*/
+.header a, .header div.logo div.heading{
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/*Styling logo link*/
+    .header div.logo div.heading {
+        font-size: 1.6rem;
+        font-family: "Roboto", Arial, sans-serif;
+        font-weight: 600;
+    }
+
+/*Changing Back-ground color on mouse hover*/
+    .header a:hover, .header a:focus, .header .logo a:hover{
+        box-sizing: content-box;
+        background-color: #262222;
+    }
+
+/*styling the active link*/
+    .header a.active {
+        background-color: #6cc1c0;
+        color: black;
+    }
+
+/*float right to header links*/
+.header-right{
+    float: right;
+}
+
+@media screen and (min-width:500px){
+    .header div.logo a{
+        display:none;
+    }
+}
+
+/*adding media queries to make the header responsive*/
+@media screen and (max-width: 500px){
+    .header a,.header div.logo div.heading{
+        position:relative;
+        float: none;
+        display: block;
+        
+    }
+
+    .header div.logo a.icon {
+        position:absolute;
+        display:block;
+        float:left;
+    }
+    .header-right{
+        float: none;
+        display: none;
+    }
+}
+
+/*Slider styling*/
+.slider {
+    width: 100%;
+    height:510px;
+    position: relative;
+    background-image: url('photos/1.jpg');
+    background-size: cover;
+    box-shadow: 2px 2px 10px #3c3838;
+    animation: slider 20s infinite ease-in-out;
+    padding-top: 100px;
+}
+
+@keyframes slider{
+    0% {
+        background-image: url('photos/1.jpg');
+    }
+    20% {
+        background-image: url('photos/5.jpg');
+    }
+    40% {
+        background-image: url('photos/3.jpg');
+    }
+    60% {
+        background-image: url('photos/4.jpg');
+    }
+    80% {
+        background-image: url('photos/2.jpg');
+    }
+}
+
+.description h2{
+    padding: 20px 20px;
+    font-family:Geneva, Verdana, sans-serif;
+    font-size:40px;
+    text-align:center;
+    font-variant:small-caps;
+    font-weight:400;
+    text-shadow:2px 1px 7px #333;
+}
+
+

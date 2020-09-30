@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Confrenz-Sign Up</title>
+    <link href="signin.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Creating Signing up/login page-->
+    <main class="form">
+        <div class="tab-header">
+            <div class="active">Sign Up</div>
+            <div>Sign In</div>
+        </div>
+        <div class="tab-content">
+            <!--Table body for sign up for new user-->
+            <div class="tab-body active">
+                <div class="form-element">
+                    <input type="text" name="Email" placeholder="E-mail" />
+                </div>
+                <div class="form-element">
+                    <input type="text" name="Name" placeholder="Username" />
+                </div>
+                <div class="form-element">
+                    <input type="password" name="Password" placeholder="Password" />
+                </div>
+                <div class="form-element">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <!--Tab-body for existing user login-->
+            <div class="tab-body">
+                <div class="form-element">
+                    <input type="text" name="Email" placeholder="E-mail / Username" />
+                </div>
+                <div class="form-element">
+                    <input type="password" name="Password" placeholder="Password" />
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="remember_me" />
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <div class="form-element">
+                    <button>Sign In </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        let tabPane = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+        for (let i = 0; i < tabPane.length; i++) {
+            tabPane[i].addEventListener("click", function () {
+                document.getElementsByClassName("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+                tabPane[i].classList.add("active");
+                document.getElementsByClassName("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+                document.getElementsByClassName("tab-content")[0].getElementsByClassName("tab-body")[i].classList.add("active");
+            });
+        }
+    </script>
+</body>
+</html>
