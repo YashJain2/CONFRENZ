@@ -1,0 +1,24 @@
+{
+  "name": "confrenz",
+  "version": "1.0.0",
+  "description": "A Web application for RTC",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashJain2/Confrenz.git"
+  },
+  "author": "Yash Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashJain2/Confrenz/issues"
+  },
+  "homepage": "https://github.com/YashJain2/Confrenz#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
