@@ -4,9 +4,9 @@
   "description": "A Web application for RTC",
   "main": "index.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js",
-      "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/YashJain2/Confrenz#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "websocket": "^1.0.32"
   }
 }
