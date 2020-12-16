@@ -9,7 +9,7 @@
 
 header{
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(24,24,24,0.9);
     position:fixed;
     top:0;
     width:100%;
